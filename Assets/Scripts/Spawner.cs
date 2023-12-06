@@ -1,19 +1,52 @@
+using System.Collections;
 using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    private Enemy _template;
-    private Quaternion _direction;
+    [SerializeField] private Enemy _template;
+    [SerializeField] private float _spawnTime;
 
-    public void Spawn()
+    private Transform[] _points;
+    private Vector3[] _directions;
+
+    private void Awake()
     {
-        if (_template != null && _direction != null)
+        _points = new Transform[gameObject.transform.childCount];
+        _directions = new Vector3[_points.Length];
+
+        for (int i = 0; i < _directions.Length; i++)
         {
-            Instantiate(_template, transform.position, _direction);
+            _points[i] = gameObject.transform.GetChild(i);
+            _directions[i] = RandomDirection();
         }
     }
 
-    public void SetTemplate(Enemy template) => _template = template;
+    private void Start()
+    {
+        StartCoroutine(Spawn());
+    }
 
-    public void SetDirection(Quaternion direction) => _direction = direction;
+    private IEnumerator Spawn()
+    {
+        WaitForSeconds time = new(_spawnTime);
+        int randomPointNumber;
+
+        while (true)
+        {
+            randomPointNumber = Random.Range(0, _points.Length);
+
+            Enemy enemy = Instantiate(_template, _points[randomPointNumber].transform.position, Quaternion.identity);
+            enemy.SetDirection(_directions[randomPointNumber]);
+
+            yield return time;
+        }
+    }
+
+    private Vector3 RandomDirection()
+    {
+        float _minRotation = -180;
+        float _maxRotation = 180;
+
+        return new Vector3(Random.Range(_minRotation, _maxRotation), Random.Range(_minRotation, _maxRotation), Random.Range(_minRotation, _maxRotation));
+    }
 }

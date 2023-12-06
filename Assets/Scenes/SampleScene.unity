@@ -135,9 +135,8 @@ GameObject:
   - component: {fileID: 698386208}
   - component: {fileID: 698386207}
   - component: {fileID: 698386206}
-  - component: {fileID: 698386205}
   m_Layer: 0
-  m_Name: Spawner 2
+  m_Name: Point 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -158,18 +157,6 @@ Transform:
   m_Father: {fileID: 1991065364}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &698386205
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 698386203}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: efc1b9b0b998df246978dbbfd29354d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &698386206
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -347,9 +334,8 @@ GameObject:
   - component: {fileID: 921335959}
   - component: {fileID: 921335958}
   - component: {fileID: 921335957}
-  - component: {fileID: 921335956}
   m_Layer: 0
-  m_Name: Spawner 1
+  m_Name: Point 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -370,18 +356,6 @@ Transform:
   m_Father: {fileID: 1991065364}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &921335956
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 921335954}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: efc1b9b0b998df246978dbbfd29354d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &921335957
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -557,9 +531,8 @@ GameObject:
   - component: {fileID: 1325010325}
   - component: {fileID: 1325010324}
   - component: {fileID: 1325010323}
-  - component: {fileID: 1325010322}
   m_Layer: 0
-  m_Name: Spawner 3
+  m_Name: Point 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -580,18 +553,6 @@ Transform:
   m_Father: {fileID: 1991065364}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1325010322
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1325010320}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: efc1b9b0b998df246978dbbfd29354d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &1325010323
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -674,7 +635,7 @@ GameObject:
   - component: {fileID: 1991065364}
   - component: {fileID: 1991065363}
   m_Layer: 0
-  m_Name: Spawners
+  m_Name: Spawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -725,9 +686,8 @@ GameObject:
   - component: {fileID: 2035775955}
   - component: {fileID: 2035775954}
   - component: {fileID: 2035775953}
-  - component: {fileID: 2035775952}
   m_Layer: 0
-  m_Name: Spawner 4
+  m_Name: Point 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -741,25 +701,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2035775950}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 11.6, z: 0}
+  m_LocalPosition: {x: 0, y: 11.6, z: -0.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1991065364}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2035775952
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2035775950}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: efc1b9b0b998df246978dbbfd29354d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &2035775953
 BoxCollider:
   m_ObjectHideFlags: 0
